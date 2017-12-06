@@ -1,4 +1,5 @@
-
+package Sony;
+import interfaces.Hand;
 
 public class SonyHand implements Hand{
 	

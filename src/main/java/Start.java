@@ -1,6 +1,8 @@
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import window.Oi;
+
 
 public class Start {
 	private static ApplicationContext context;

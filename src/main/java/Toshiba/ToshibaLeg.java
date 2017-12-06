@@ -1,6 +1,5 @@
-
-
-
+package Toshiba;
+import interfaces.Leg;
 
 public class ToshibaLeg implements Leg {
 	

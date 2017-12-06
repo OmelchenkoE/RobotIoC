@@ -36,14 +36,14 @@
 		</bean>
 		
 	<!-- ниже создали/объявили объекты классов  -->
-	<bean id="sonyHead" class="SonyHead"></bean>
-	<bean id="sonyHand" class="SonyHand"></bean>
-	<bean id="sonyLeg" class="SonyLeg"></bean>
-	<bean id="toshibaHead" class="ToshibaHead"></bean>
-	<bean id="toshibaHand" class="ToshibaHand"></bean>
-	<bean id="toshibaLeg" class="ToshibaLeg"></bean>
+	<bean id="sonyHead" class="Sony.SonyHead"></bean>
+	<bean id="sonyHand" class="Sony.SonyHand"></bean>
+	<bean id="sonyLeg" class="Sony.SonyLeg"></bean>
+	<bean id="toshibaHead" class="Toshiba.ToshibaHead"></bean>
+	<bean id="toshibaHand" class="Toshiba.ToshibaHand"></bean>
+	<bean id="toshibaLeg" class="Toshiba.ToshibaLeg"></bean>
 		
-	<bean id="oi" class="Oi"></bean> <!-- лол прокатило -->
+	<bean id="oi" class="window.Oi"></bean> <!-- лол прокатило -->
 		
 </beans>
 <!-- то что через проперту пилится через гетеры-сеттеры, а то что через конструктор передаеться в параметры -->

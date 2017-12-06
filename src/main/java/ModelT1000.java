@@ -1,4 +1,7 @@
-
+import interfaces.Hand;
+import interfaces.Head;
+import interfaces.Leg;
+import interfaces.Robot;
 
 public class ModelT1000 implements Robot {
 

@@ -1,6 +1,5 @@
-
-
-
+package Toshiba;
+import interfaces.Head;
 
 public class ToshibaHead implements Head{
 	

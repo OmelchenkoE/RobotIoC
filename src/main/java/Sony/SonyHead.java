@@ -1,5 +1,5 @@
-
-
+package Sony;
+import interfaces.Head;
 
 public class SonyHead implements Head{
 	

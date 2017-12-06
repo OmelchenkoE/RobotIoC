@@ -1,4 +1,5 @@
-
+package Sony;
+import interfaces.Leg;
 
 public class SonyLeg implements Leg {
 	

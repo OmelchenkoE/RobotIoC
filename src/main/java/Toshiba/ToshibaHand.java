@@ -1,6 +1,5 @@
-
-
-
+package Toshiba;
+import interfaces.Hand;
 
 public class ToshibaHand implements Hand{
 	

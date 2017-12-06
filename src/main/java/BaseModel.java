@@ -1,3 +1,7 @@
+import interfaces.Hand;
+import interfaces.Head;
+import interfaces.Leg;
+import interfaces.Robot;
 
 public abstract class BaseModel implements Robot{
 
