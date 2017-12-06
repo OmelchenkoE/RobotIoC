@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	
+	default-lazy-init="true">
+
+
+	<bean id="t1000" class="ModelT1000"
+	c:color="red"
+	c:year="12324"
+	c:sound="true"
+	scope="prototype"
+	>
+	
+	<!--индекс и тип указывать не обязательно но желательноj-->
+<!-- 	<constructor-arg value="black" index="0" type="String"></constructor-arg> -->
+<!-- 	<constructor-arg value="1941" ></constructor-arg> -->
+<!-- 	<constructor-arg value="true" index="2"></constructor-arg> -->
+			
+			
+		<property name="leg" ref="sonyLeg"></property>
+		<property name="head" ref="toshibaHead"></property>
+		<property name="hand" ref="sonyHand"></property>
+		
+	</bean>
+	
+	
+<bean id="t1000Empty" class="ModelT1000">
+	
+			<constructor-arg ref="sonyLeg" ></constructor-arg>
+			<constructor-arg ref="sonyHead" ></constructor-arg>
+			<constructor-arg ref="sonyHand" ></constructor-arg>
+					
+		</bean>
+		
+	<!-- ниже создали/объявили объекты классов  -->
+	<bean id="sonyHead" class="SonyHead"></bean>
+	<bean id="sonyHand" class="SonyHand"></bean>
+	<bean id="sonyLeg" class="SonyLeg"></bean>
+	<bean id="toshibaHead" class="ToshibaHead"></bean>
+	<bean id="toshibaHand" class="ToshibaHand"></bean>
+	<bean id="toshibaLeg" class="ToshibaLeg"></bean>
+		
+	<bean id="oi" class="Oi"></bean> <!-- лол прокатило -->
+		
+</beans>
+<!-- то что через проперту пилится через гетеры-сеттеры, а то что через конструктор передаеться в параметры -->
